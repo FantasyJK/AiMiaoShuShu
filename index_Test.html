@@ -1,0 +1,97 @@
+
+<meta charset="utf-8"> 
+<html>
+<head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+    <h1>miaomiaomiao!!!!!</h1>
+  <body>
+  
+  <audio controls> 
+    <source src="/music/1/大塚愛 - 金鱼花火.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <div id="test"></div>
+  </body>
+  </html>
+
+  <script>
+var timePeriod;
+var weather;  //  sunny? cloudy? rainny? fair? snowy?
+var mood;  // happy? excited? calm? sad? angry?
+var rank = 0; // 0 - 11
+
+$(function () {
+    getTime();
+    getWeather();
+    getMood();
+    rank = 1;
+    alert(rank);    
+    var file = "/music/" + rank + "/list.html";
+    $('#test')[0].innerHTML = file;
+ 
+
+});
+
+function getTime() {  // 0 - 2
+	var hour = new Date().getHours();
+	if (hour > 6 && hour < 13) {
+		timePeriod = "morning";	
+		rank += 2;
+	}
+	else if (hour >= 13 && hour < 19) {
+		timePeriod = "afternoon";
+		rank += 2;
+	}
+	else if (hour >= 19 && hour < 22) {
+		timePeriod = "evening";
+		rank += 1;
+	}
+	else {
+		timePeriod = "night";
+		rank += 0;
+	}
+}
+
+function getWeather() { // 0 - 3
+ // http://api.openweathermap.org/data/2.5/weather?q=singapore&APPID=9881efd715d16d76e125ea4e77e0a840
+ 
+	if (weather == "sunny"){
+		rank += 3;
+	}
+	else if (weather == "cloudy") {	
+		rank += 2;
+	}
+	else if (weather == "fair") {	
+		rank += 1;
+	}
+	else {	
+		rank += 0;
+	}
+}
+
+function getMood() { // 0 - 6
+	if (mood == "excited"){
+		rank += 6;
+	}
+	else if (mood == "happy") {	
+		rank += 5;
+	}
+	else if (mood == "calm") {	
+		rank += 4;
+	}
+	else if (mood == "thinking") {	
+		rank += 2;
+	}
+	else if (mood == "Stressed") {
+		rank += 1;
+	}
+	else if (mood == "sad") {	
+		rank += 0;
+	}
+	else if (mood == "sad") {	
+		 // trigger special effect here!!!
+	}
+}
+
+  </script>

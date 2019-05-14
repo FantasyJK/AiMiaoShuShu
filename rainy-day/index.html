@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>喵喵点歌台</title>
+    <style media="screen">
+        body {
+            overflow: hidden;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .center {
+            margin: auto;
+            width: 60% !important;
+            padding: 10px;
+        }
+
+        .above {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            opacity: 0.7;
+        }
+        .header {  
+            width: 100%;
+            z-index: 1;
+            margin-top: 0;
+            position: absolute;
+            opacity: 0.9;
+            background-color:#1a191c
+        }
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://dreamsky.github.io/main/blog/common/init.css">
+    <script src="rainyday.js"></script>
+    <script>
+        function run() {
+            var image = document.getElementById('background');
+            image.onload = function () {
+                var engine = new RainyDay({
+                    image: this
+                });
+                engine.rain([[3, 2, 2]], 100);
+            };
+            image.crossOrigin = 'anonymous';
+            //image.src = 'http://i.imgur.com/U1Tqqdw.jpg';
+            image.src = 'sg.jpg';
+
+        }
+    </script>
+</head>
+
+<body onload="run();">
+        <!-- <div class="page-header header" style="margin-top:0" >
+                <h1 style="color:#b9b7c0; text-align: center;" >喵喵点歌台</h1>      
+              </div> -->
+    <div class="center">
+        <audio controls autoplay class="above" style="margin-top:100px">
+            <source src="/music/1/大塚愛 - 金鱼花火.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="container center" >
+        <div class="well well-lg above" style="width:100%;  height: 600px; overflow: auto;background: transparent;color: white;font-size: 1.5rem; border:none;opacity: 1;"><p>金鱼花火</p>
+            
+           </br>
+            
+           
+            
+           
+               <p>心に 泳ぐ 金魚は</p>
+               <p>爱你就像在心里不停游动的金鱼,</p>
+               <p>恋し 想いを 募らせて</p>
+               <p>那爱恋的感觉在心里越来越浓.</p>
+               <p>真っ赤に 染まり 実らぬ 想いを 知りながら</p>
+               <p>我知道这么爱你也是没有什么结果</p>
+               <p>それでも そばにいたいと 願ったの</p>
+               <p>就算如此,我还是祈求能留在你的身边.</p>
+               <p>夏の匂い 雨の中で</p>
+               <p>在夏天的雨中</p>
+               <p>ぽたぽたおちる金魚花火</p>
+               <p>纷纷落下的金鱼烟火</p>
+               <p>光で 目がくらんで</p>
+               <p>在强烈的光线中,我的眼睛有点花.</p>
+               <p>一瞬うつるは あなたの優顔</p>
+               <p>一瞬间仿佛映出的是你温柔的脸庞.</p>
+                </br>
+           
+               <p>心に 泳ぐ 金魚は</p>
+               <p>爱你就像在心里不停游动的金鱼,</p>
+               <p>醜さで 包まれぬよう</p>
+               <p>放开那些不好的负担吧</p>
+               <p>この夏だけの 命と 決めて</p>
+               <p>只有由这个夏天决定命运了.</p>
+           <p>	少しの 時間だけでも</p>
+           <p>	希望只要再过不久</p>
+           <p>	あなたの 幸せを 願ったの</p>
+           <p>	你就能给我幸福.</p>
+                </br>
+           
+           <p>	夏の匂い 夜が包んで</p>
+           <p>	在这充满夏天气息的夜晚,</p>
+           <p>	ぽたぽたおちる金魚花火</p>
+           <p>	纷纷落下的金鱼烟火中,</p>
+           <p>	どんな言葉にも できない</p>
+           <p>	不管什么话语也不能表达我的爱意.</p>
+           <p>	一瞬うつるの あなたの優顔</p>
+           <p>	一瞬间，里面仿佛映出了你温柔的脸庞.</p>
+                </br>
+           
+           <p>	夏の匂い 雨の中で</p>
+           <p>	在夏天的雨中</p>
+           <p>	夏の匂い 雨の中で</p>
+           <p>	在夏天的雨中</p>
+           <p>	夏の匂い 雨の中で</p>
+           <p>	在夏天的雨中</p>
+           <p>	ぽたぽたおちる金魚花火</p>
+           <p>	纷纷落下的金鱼烟火中,</p>
+           <p>	光で 目がくらんで</p>
+           <p>	在强烈的光线中,我的眼睛有点花.</p>
+           <p>	一瞬うつるは あなたの優顔</p>
+           <p>	一瞬间仿佛映出的是你温柔的脸庞.</p>
+           <p>	夏の匂い 夜が包んで</p>
+           <p>	在这充满夏天气息的夜晚,</p>
+           <p>	ぽたぽたおちる金魚花火</p>
+           <p>	纷纷落下的金鱼烟火中,</p>
+           <p>	どんな言葉にも できない</p>
+           <p>	不管什么话语也不能表达我的爱意.</p>
+           <p>	一瞬うつるの あなたの優顔</p>
+           <p>	一瞬间，仿佛映出了你温柔的脸庞.</p>
+           </div>
+    </div>
+    <img id="background" alt="background" src="" style="z-index: 0;   background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;height: 100%;" />
+</body>
+<!-- <div style="position:fixed;bottom:30px;width:100%;height:90px;z-index:999">
+        <div class="footer-banner" style="width:728px; margin:0 auto"></div>
+    </div> -->
+<script src="http://dreamsky.github.io/main/blog/common/jquery.min.js"></script>
+<!-- <script src="http://dreamsky.github.io/main/blog/common/init.js"></script> -->
+
+</html>
